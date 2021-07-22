@@ -18,9 +18,17 @@
         </div>
       </div>
     </div>
+    <h1 class="hero-title">Historia</h1>
+    <div class="hero-bio-cont">
+      <p class="hero-bio">
+        Los monjes de Turstarkuri observaban los accidentados valles por debajo de su monasterio en la montaña a medida que oleadas y oleadas de invasores se extendían por los reinos inferiores. Ascéticos y pragmáticos, se mantuvieron al margen de las luchas mundanas en su nido monástico, envueltos en la meditación que no conocía a los dioses o los elementos de la magia. Entonces vino la Legión del Dios Muerto, cruzados con el siniestro encargo de sustituir todos los cultos locales con el venenoso nihilismo de su Señor Sin Vida. De un paisaje que no conocía nada más que sangre y batallas durante miles de años, arrancaron las almas y los huesos de las legiones caídas y los lanzaron contra Turstarkuri. El monasterio solo resistió el asalto un par de semanas, y los pocos monjes que se preocuparon en salir de su meditación creyeron que los invasores eran visiones demoníacas enviadas para distraerlos de su meditación. Murieron sobre los cojines de seda en los que estaban sentados. Solo un joven sobrevivió: un peregrino que había llegado como acólito buscando la sabiduría, pero que aún no había sido admitido en el monasterio. Con horror, vio cómo los monjes a los que había servido té y ortigas primero eran asesinados y luego obligados a unirse a las filas del sacerdocio del Dios Muerto. Con nada más que unos pocos de los preciados pergaminos dogmáticos de Turstarkuri, se alejó hacia la relativa seguridad de otras tierras, jurando no solo destruir a los hechiceros del Dios Muerto, sino también poner fin a la magia por completo.
+      </p>
+      <p class="hero-skill">
+        Corta a sus enemigos con ataques que agotan el maná
+      </p>
+    </div>
     <div class="hero-cont">
       <div class="hero-video">
-        <h1>Antimage</h1>
         <video
           src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.webm"
           autoplay
@@ -29,32 +37,23 @@
         />
       </div>
       <div class="hero-details-cont">
-        <h1>Historia</h1>
-        <div class="hero-bio-cont">
-          <p class="hero-bio">
-            Los monjes de Turstarkuri observaban los accidentados valles por debajo de su monasterio en la montaña a medida que oleadas y oleadas de invasores se extendían por los reinos inferiores. Ascéticos y pragmáticos, se mantuvieron al margen de las luchas mundanas en su nido monástico, envueltos en la meditación que no conocía a los dioses o los elementos de la magia. Entonces vino la Legión del Dios Muerto, cruzados con el siniestro encargo de sustituir todos los cultos locales con el venenoso nihilismo de su Señor Sin Vida. De un paisaje que no conocía nada más que sangre y batallas durante miles de años, arrancaron las almas y los huesos de las legiones caídas y los lanzaron contra Turstarkuri. El monasterio solo resistió el asalto un par de semanas, y los pocos monjes que se preocuparon en salir de su meditación creyeron que los invasores eran visiones demoníacas enviadas para distraerlos de su meditación. Murieron sobre los cojines de seda en los que estaban sentados. Solo un joven sobrevivió: un peregrino que había llegado como acólito buscando la sabiduría, pero que aún no había sido admitido en el monasterio. Con horror, vio cómo los monjes a los que había servido té y ortigas primero eran asesinados y luego obligados a unirse a las filas del sacerdocio del Dios Muerto. Con nada más que unos pocos de los preciados pergaminos dogmáticos de Turstarkuri, se alejó hacia la relativa seguridad de otras tierras, jurando no solo destruir a los hechiceros del Dios Muerto, sino también poner fin a la magia por completo.
-          </p>
-          <p class="hero-skill">
-            Corta a sus enemigos con ataques que agotan el maná
-          </p>
-        </div>
 
         <h1>Atributos</h1>
         <div class="hero-details">
           <div class="detail-box">
-            <p><b>Fuerza: </b>23</p>
-            <p><b>Agilidad: </b>24</p>
-            <p><b>Inteligencia: </b>12</p>
+            <p><b>Fuerza: </b><span id="hero-str">23</span></p>
+            <p><b>Agilidad: </b><span id="hero-agi">24</span></p>
+            <p><b>Inteligencia: </b><span id="hero-int">12</span></p>
           </div>
           <div class="detail-box">
-            <p><b>Daño: </b>53-57</p>
-            <p><b>Rango de ataque: </b>150</p>
-            <p><b>Armadura: </b>4</p>
+            <p><b>Daño: </b><span id="hero-attack">53 - 57</span></p>
+            <p><b>Rango de ataque: </b><span id="hero-range">150</span></p>
+            <p><b>Armadura: </b><span id="hero-armor">4</span></p>
           </div>
           <div class="detail-box">
-            <p><b>Velocidad: </b>310</p>
-            <p><b>Salud: </b>660</p>
-            <p><b>Maná: </b>219</p>
+            <p><b>Velocidad: </b><span id="hero-speed">310</span></p>
+            <p><b>Salud: </b><span id="hero-health">660</span></p>
+            <p><b>Maná: </b><span id="hero-mana">219</span></p>
           </div>
         </div>
 
@@ -109,7 +108,7 @@
     </div>
 
     <div class="list-cont">
-      <h1>Lista de Héroes</h1>
+      <h1 onclick="handleHeroClick(this)">Lista de Héroes</h1>
       <div class="hero-list">
         <div class="hero-item">
           <h5>Anti-mage</h5>
